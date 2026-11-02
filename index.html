@@ -1,0 +1,1694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DropoutAI | Student Dropout Prediction</title>
+
+    <meta name="description"
+          content="ICT324 research project on predicting student dropout using machine learning.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================================
+     NAVIGATION
+================================ -->
+
+<header class="header">
+
+    <div class="container nav-wrapper">
+
+        <!-- Logo -->
+        <a href="#home" class="logo">
+
+            <div class="logo-symbol">
+                <span>D</span>
+            </div>
+
+            <div class="logo-text">
+                <strong>DropoutAI</strong>
+                <small>ICT324 RESEARCH</small>
+            </div>
+
+        </a>
+
+
+        <!-- Navigation -->
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#home" class="active">Home</a>
+            <a href="#research">Research</a>
+            <a href="#data">Data</a>
+            <a href="#method">Method</a>
+            <a href="#models">Models</a>
+            <a href="#results">Results</a>
+            <a href="#progress">Progress</a>
+            <a href="#predictor">Predict Risk</a>
+
+        </nav>
+
+
+        <!-- Right button -->
+        <a href="#resources" class="project-btn">
+            Project Files
+            <span>↗</span>
+        </a>
+
+
+        <!-- Mobile menu -->
+        <button class="menu-btn"
+                id="menuBtn"
+                aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================================
+     HERO
+================================ -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <!-- Background decorations -->
+    <div class="hero-grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+
+    <div class="container hero-wrapper">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="hero-content">
+
+            <div class="hero-tag">
+
+                <span class="tag-line"></span>
+
+                MACHINE LEARNING FOR EDUCATION
+
+            </div>
+
+
+            <h1>
+
+                Predicting Student
+
+                <span class="gradient-text">
+                    Dropout Risk
+                </span>
+
+                Through Machine Learning
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                An ICT324 data mining research project investigating
+                how machine learning can identify patterns associated
+                with student dropout and support early risk detection.
+
+            </p>
+
+
+            <!-- Buttons -->
+
+            <div class="hero-actions">
+
+                <a href="#research"
+                   class="btn btn-primary">
+
+                    Explore Research
+
+                    <span>→</span>
+
+                </a>
+
+
+                <a href="#method"
+                   class="btn btn-secondary">
+
+                    View Methodology
+
+                </a>
+
+            </div>
+
+
+            <!-- Project details -->
+
+            <div class="hero-details">
+
+                <div class="detail">
+
+                    <span class="detail-label">
+                        COURSE
+                    </span>
+
+                    <strong>
+                        ICT324
+                    </strong>
+
+                    <small>
+                        Data Mining
+                    </small>
+
+                </div>
+
+
+                <div class="detail-line"></div>
+
+
+                <div class="detail">
+
+                    <span class="detail-label">
+                        TRACK
+                    </span>
+
+                    <strong>
+                        Classification
+                    </strong>
+
+                    <small>
+                        Machine Learning
+                    </small>
+
+                </div>
+
+
+                <div class="detail-line"></div>
+
+
+                <div class="detail">
+
+                    <span class="detail-label">
+                        STATUS
+                    </span>
+
+                    <strong class="status-text">
+                        In Progress
+                    </strong>
+
+                    <small>
+                        Academic Year 2026
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="hero-dashboard">
+
+            <div class="dashboard-glow"></div>
+
+
+            <div class="dashboard-card">
+
+
+                <!-- Card header -->
+
+                <div class="dashboard-header">
+
+                    <div>
+
+                        <span class="live-dot"></span>
+
+                        Research Overview
+
+                    </div>
+
+
+                    <span class="status-badge">
+                        IN PROGRESS
+                    </span>
+
+                </div>
+
+
+
+                <!-- Main visual -->
+
+                <div class="ml-visual">
+
+                    <div class="outer-ring">
+
+                        <div class="middle-ring">
+
+                            <div class="inner-circle">
+
+                                <span class="ml-text">
+                                    ML
+                                </span>
+
+                                <span class="classification-text">
+                                    CLASSIFICATION
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Research status -->
+
+                <div class="research-list">
+
+
+                    <div class="research-row">
+
+                        <div class="row-number">
+                            01
+                        </div>
+
+                        <div class="row-content">
+
+                            <small>
+                                Research Problem
+                            </small>
+
+                            <strong>
+                                Student Dropout
+                            </strong>
+
+                        </div>
+
+                        <div class="row-complete">
+                            ✓
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="research-row">
+
+                        <div class="row-number">
+                            02
+                        </div>
+
+                        <div class="row-content">
+
+                            <small>
+                                Research Framework
+                            </small>
+
+                            <strong>
+                                CRISP-DM
+                            </strong>
+
+                        </div>
+
+                        <div class="row-complete">
+                            ✓
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="research-row">
+
+                        <div class="row-number">
+                            03
+                        </div>
+
+                        <div class="row-content">
+
+                            <small>
+                                Current Phase
+                            </small>
+
+                            <strong>
+                                Data Preparation
+                            </strong>
+
+                        </div>
+
+                        <div class="row-progress">
+                            ●
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Bottom -->
+
+                <div class="dashboard-footer">
+
+                    <span>
+                        ICT324 RESEARCH PROJECT
+                    </span>
+
+                    <span>
+                        2026
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     QUICK INFORMATION
+================================ -->
+
+<section class="project-summary">
+
+    <div class="container summary-grid">
+
+
+        <div class="summary-item">
+
+            <div class="summary-number">
+                01
+            </div>
+
+            <div>
+
+                <strong>
+                    Real-World Problem
+                </strong>
+
+                <span>
+                    Student retention & dropout
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="summary-item">
+
+            <div class="summary-number">
+                02
+            </div>
+
+            <div>
+
+                <strong>
+                    Classification
+                </strong>
+
+                <span>
+                    Data mining research track
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="summary-item">
+
+            <div class="summary-number">
+                03
+            </div>
+
+            <div>
+
+                <strong>
+                    Multiple Models
+                </strong>
+
+                <span>
+                    Comparative evaluation
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="summary-item">
+
+            <div class="summary-number">
+                04
+            </div>
+
+            <div>
+
+                <strong>
+                    CRISP-DM
+                </strong>
+
+                <span>
+                    Research methodology
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     01 — RESEARCH PROBLEM
+===================================================== -->
+
+<section class="content-section research-section" id="research">
+
+    <div class="container">
+
+        <div class="section-header">
+            <div>
+                <span class="section-kicker">01 / RESEARCH PROBLEM</span>
+
+                <h2>
+                    Understanding student
+                    <span>dropout risk.</span>
+                </h2>
+            </div>
+
+            <p>
+                Student dropout is an important educational challenge.
+                This research investigates whether machine-learning
+                techniques can identify useful patterns associated
+                with students who leave their studies.
+            </p>
+        </div>
+
+
+        <div class="research-layout">
+
+            <article class="problem-card">
+                <span class="card-label">WHY IT MATTERS</span>
+
+                <h3>Early identification can support better decisions.</h3>
+
+                <p>
+                    When students leave education before completing
+                    their studies, the effects can extend beyond the
+                    individual student to educational institutions and
+                    wider society.
+                </p>
+
+                <p>
+                    Data mining provides an opportunity to investigate
+                    historical student information and determine whether
+                    meaningful patterns can help distinguish students
+                    with different academic outcomes.
+                </p>
+            </article>
+
+
+            <article class="question-card">
+
+                <div class="quote-mark">“</div>
+
+                <span class="card-label">RESEARCH QUESTION</span>
+
+                <h3>
+                    How accurately can machine-learning models identify
+                    students at risk of dropping out?
+                </h3>
+
+                <div class="question-tag">
+                    Classification Research
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div class="objectives-grid">
+
+            <article class="objective">
+                <span>01</span>
+                <h3>Understand</h3>
+                <p>
+                    Explore the dataset and understand the variables
+                    related to student outcomes.
+                </p>
+            </article>
+
+            <article class="objective">
+                <span>02</span>
+                <h3>Prepare</h3>
+                <p>
+                    Clean and transform the selected data before
+                    machine-learning experiments.
+                </p>
+            </article>
+
+            <article class="objective">
+                <span>03</span>
+                <h3>Model</h3>
+                <p>
+                    Apply multiple classification algorithms rather
+                    than relying on a single model.
+                </p>
+            </article>
+
+            <article class="objective">
+                <span>04</span>
+                <h3>Evaluate</h3>
+                <p>
+                    Compare model performance and interpret the
+                    resulting research findings.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     02 — DATA
+===================================================== -->
+
+<section class="content-section data-section" id="data">
+
+    <div class="container">
+
+        <div class="section-header">
+            <div>
+                <span class="section-kicker">02 / DATA</span>
+
+                <h2>
+                    Exploring our
+                    <span>student dataset.</span>
+                </h2>
+            </div>
+
+            <p>
+                Dataset statistics are populated from the project
+                update in update.js.
+            </p>
+        </div>
+
+
+        <div class="live-data-status">
+            <span class="live-dot"></span>
+            PROJECT DATA OVERVIEW
+        </div>
+
+
+        <div class="dataset-stat-grid live-stat-grid">
+
+            <article class="dataset-stat">
+                <span>STUDENTS</span>
+                <strong id="dataStudents">—</strong>
+                <small>Total observations</small>
+            </article>
+
+            <article class="dataset-stat">
+                <span>INPUT FEATURES</span>
+                <strong id="dataFeatures">—</strong>
+                <small>Predictor variables</small>
+            </article>
+
+            <article class="dataset-stat">
+                <span>MISSING VALUES</span>
+                <strong id="dataMissing">—</strong>
+                <small>Detected in dataset</small>
+            </article>
+
+            <article class="dataset-stat">
+                <span>TARGET CLASSES</span>
+                <strong>3</strong>
+                <small>Dropout · Enrolled · Graduate</small>
+            </article>
+
+        </div>
+
+
+        <div class="data-dashboard-grid">
+
+            <article class="data-dashboard-card">
+
+                <div class="dashboard-card-title">
+                    <div>
+                        <span>CLASS DISTRIBUTION</span>
+                        <h3>Student Outcomes</h3>
+                    </div>
+
+                    <strong id="dataTotalLabel">— students</strong>
+                </div>
+
+
+                <div class="outcome-bars">
+
+                    <div class="outcome-item">
+                        <div class="outcome-heading">
+                            <span>Graduate</span>
+                            <strong id="graduateValue">—</strong>
+                        </div>
+
+                        <div class="outcome-track">
+                            <div
+                                class="outcome-fill graduate-fill"
+                                id="graduateBar">
+                            </div>
+                        </div>
+
+                        <small id="graduatePercent">—</small>
+                    </div>
+
+
+                    <div class="outcome-item">
+                        <div class="outcome-heading">
+                            <span>Dropout</span>
+                            <strong id="dropoutValue">—</strong>
+                        </div>
+
+                        <div class="outcome-track">
+                            <div
+                                class="outcome-fill dropout-fill"
+                                id="dropoutBar">
+                            </div>
+                        </div>
+
+                        <small id="dropoutPercent">—</small>
+                    </div>
+
+
+                    <div class="outcome-item">
+                        <div class="outcome-heading">
+                            <span>Enrolled</span>
+                            <strong id="enrolledValue">—</strong>
+                        </div>
+
+                        <div class="outcome-track">
+                            <div
+                                class="outcome-fill enrolled-fill"
+                                id="enrolledBar">
+                            </div>
+                        </div>
+
+                        <small id="enrolledPercent">—</small>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="data-insight-card">
+
+                <span class="small-label">DATA INSIGHT</span>
+
+                <h3>What does the dataset contain?</h3>
+
+                <p>
+                    The dataset contains student demographic,
+                    academic and socioeconomic information used
+                    to classify students into three academic outcomes.
+                </p>
+
+                <div class="insight-list">
+
+                    <div>
+                        <span>01</span>
+                        <p>
+                            <strong>Graduate</strong>
+                            Students who successfully completed their studies.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>02</span>
+                        <p>
+                            <strong>Dropout</strong>
+                            Students who left their studies before completion.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span>03</span>
+                        <p>
+                            <strong>Enrolled</strong>
+                            Students who remained enrolled at the recorded outcome.
+                        </p>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div class="pipeline">
+
+            <div class="pipeline-step">
+                <span>01</span>
+                <strong>Raw Data</strong>
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+                <span>02</span>
+                <strong>Data Cleaning</strong>
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step">
+                <span>03</span>
+                <strong>Preparation</strong>
+            </div>
+
+            <div class="pipeline-arrow">→</div>
+
+            <div class="pipeline-step completed-pipeline">
+                <span>04</span>
+                <strong>Model Ready ✓</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     03 — METHODOLOGY
+===================================================== -->
+
+<section class="content-section method-section" id="method">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+                <span class="section-kicker">03 / METHODOLOGY</span>
+
+                <h2>
+                    Following the
+                    <span>CRISP-DM framework.</span>
+                </h2>
+            </div>
+
+            <p>
+                The project follows an end-to-end data-mining process
+                from understanding the research problem through
+                evaluation and interpretation.
+            </p>
+
+        </div>
+
+
+        <div class="crisp-flow">
+
+            <article class="crisp-step">
+                <div class="crisp-number">01</div>
+                <div class="crisp-icon">◎</div>
+                <h3>Business Understanding</h3>
+                <p>
+                    Define the student dropout problem, research
+                    objectives and expected value.
+                </p>
+            </article>
+
+
+            <article class="crisp-step">
+                <div class="crisp-number">02</div>
+                <div class="crisp-icon">⌕</div>
+                <h3>Data Understanding</h3>
+                <p>
+                    Examine variables, distributions, data quality
+                    and the target outcome.
+                </p>
+            </article>
+
+
+            <article class="crisp-step active-step">
+                <div class="crisp-number">03</div>
+                <div class="crisp-icon">◇</div>
+                <h3>Data Preparation</h3>
+                <p>
+                    Clean, transform and prepare the dataset for
+                    machine-learning algorithms.
+                </p>
+                <span class="current-badge">CURRENT PHASE</span>
+            </article>
+
+
+            <article class="crisp-step">
+                <div class="crisp-number">04</div>
+                <div class="crisp-icon">⌘</div>
+                <h3>Modeling</h3>
+                <p>
+                    Train several classification algorithms using
+                    the prepared student data.
+                </p>
+            </article>
+
+
+            <article class="crisp-step">
+                <div class="crisp-number">05</div>
+                <div class="crisp-icon">✓</div>
+                <h3>Evaluation</h3>
+                <p>
+                    Compare performance using suitable classification
+                    evaluation metrics.
+                </p>
+            </article>
+
+
+            <article class="crisp-step">
+                <div class="crisp-number">06</div>
+                <div class="crisp-icon">↗</div>
+                <h3>Research Output</h3>
+                <p>
+                    Interpret the findings and communicate the
+                    research results.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     04 — MODELS
+===================================================== -->
+
+<section class="content-section models-section" id="models">
+
+    <div class="container">
+
+        <div class="section-header section-header-dark">
+
+            <div>
+                <span class="section-kicker">
+                    04 / MACHINE LEARNING
+                </span>
+
+                <h2>
+                    Comparing trained
+                    <span>classification models.</span>
+                </h2>
+            </div>
+
+            <p>
+                Add experiment results to update.js to display
+                model performance and comparisons here.
+            </p>
+
+        </div>
+
+
+        <div class="model-summary-bar">
+
+            <div>
+                <span>MODELS TESTED</span>
+                <strong id="modelsTested">—</strong>
+            </div>
+
+            <div>
+                <span>BEST MODEL</span>
+                <strong id="bestModelName">—</strong>
+            </div>
+
+            <div>
+                <span>BEST ACCURACY</span>
+                <strong id="bestModelAccuracy">—</strong>
+            </div>
+
+            <div>
+                <span>BEST F1-SCORE</span>
+                <strong id="bestModelF1">—</strong>
+            </div>
+
+        </div>
+
+
+        <div
+            class="model-results-grid"
+            id="modelResultsGrid">
+        </div>
+
+
+        <div class="metrics-strip">
+
+            <button
+                type="button"
+                class="metric-selector active"
+                data-metric="accuracy">
+                Accuracy
+            </button>
+
+            <button
+                type="button"
+                class="metric-selector"
+                data-metric="precision">
+                Precision
+            </button>
+
+            <button
+                type="button"
+                class="metric-selector"
+                data-metric="recall">
+                Recall
+            </button>
+
+            <button
+                type="button"
+                class="metric-selector"
+                data-metric="f1">
+                F1-Score
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     05 — RESULTS
+===================================================== -->
+
+<section class="content-section results-section" id="results">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+                <span class="section-kicker">
+                    05 / EXPERIMENT RESULTS
+                </span>
+
+                <h2>
+                    Model performance
+                    <span>at a glance.</span>
+                </h2>
+            </div>
+
+            <p>
+                Add experiment results to update.js to display the
+                classification model performance here.
+            </p>
+
+        </div>
+
+
+        <div class="results-highlight-grid">
+
+            <article class="result-highlight primary-result">
+
+                <span>BEST MODEL</span>
+
+                <h3 id="resultBestModel">
+                    —
+                </h3>
+
+                <p>
+                    Selected using the highest weighted F1-score.
+                </p>
+
+            </article>
+
+
+            <article class="result-highlight">
+
+                <span>ACCURACY</span>
+
+                <strong id="resultAccuracy">
+                    —
+                </strong>
+
+                <small>
+                    Best model test accuracy
+                </small>
+
+            </article>
+
+
+            <article class="result-highlight">
+
+                <span>F1-SCORE</span>
+
+                <strong id="resultF1">
+                    —
+                </strong>
+
+                <small>
+                    Weighted F1-score
+                </small>
+
+            </article>
+
+
+            <article class="result-highlight">
+
+                <span>VS BASELINE</span>
+
+                <strong id="baselineImprovement">
+                    —
+                </strong>
+
+                <small>
+                    Accuracy percentage-point improvement
+                </small>
+
+            </article>
+
+        </div>
+
+
+        <div class="results-dashboard">
+
+            <article class="comparison-chart-card">
+
+                <div class="dashboard-card-title">
+
+                    <div>
+                        <span>MODEL COMPARISON</span>
+
+                        <h3 id="chartMetricTitle">
+                            Accuracy
+                        </h3>
+                    </div>
+
+                    <span class="live-result-badge">
+                        STATIC PROJECT DATA
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="model-chart"
+                    id="modelChart">
+                </div>
+
+            </article>
+
+
+            <article class="research-finding-card">
+
+                <span class="small-label">
+                    KEY FINDING
+                </span>
+
+                <h3 id="findingHeadline">
+                    Add model results in update.js to show the
+                    strongest result.
+                </h3>
+
+                <p>
+                    The strongest model is selected using the
+                    highest weighted F1-score when results are added.
+                </p>
+
+
+                <div class="finding-stat">
+
+                    <span>Selected model</span>
+
+                    <strong id="findingBestModel">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="finding-stat">
+
+                    <span>Models evaluated</span>
+
+                    <strong id="findingModelCount">
+                        —
+                    </strong>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================================================
+     STUDENT DROPOUT PREDICTOR
+================================================== -->
+
+<section class="predictor-section" id="predictor">
+
+    <div class="section-container">
+
+        <div class="section-heading predictor-heading">
+            <span class="section-label">STATIC ML DEMO</span>
+
+            <h2>Student Dropout Risk Predictor</h2>
+
+            <p>
+                This static website does not run a prediction model.
+            </p>
+        </div>
+
+
+        <div class="predictor-layout">
+
+            <!-- LEFT SIDE -->
+            <div class="prediction-form-card">
+
+                <div class="predictor-card-header">
+                    <div>
+                        <span class="small-label">STUDENT PROFILE</span>
+                        <h3>Student Information</h3>
+                    </div>
+
+                    <span class="model-status">
+                    ● Static Demo
+                    </span>
+                </div>
+
+
+                <div class="predictor-notice">
+                    Prediction requires a model backend, which is not
+                    connected in this static version of the website.
+                </div>
+
+
+                <form id="predictionForm">
+
+                    <div
+                        class="prediction-fields"
+                        id="predictionFields"
+                    >
+                        <div class="loading-fields">
+                            Prediction is unavailable in static mode.
+                        </div>
+                    </div>
+
+
+                    <div class="prediction-actions">
+
+                        <button
+                            type="submit"
+                            class="predict-button"
+                            id="predictButton"
+                        >
+                            Prediction Unavailable
+                        </button>
+
+                        <button
+                            type="button"
+                            class="clear-button"
+                            id="clearPrediction"
+                        >
+                            Clear
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="prediction-result-card">
+
+                <span class="small-label">
+                    MODEL OUTPUT
+                </span>
+
+                <div
+                    class="result-empty"
+                    id="resultEmpty"
+                >
+
+                    <div class="result-icon">
+                        AI
+                    </div>
+
+                    <h3>Static Demo Only</h3>
+
+                    <p>
+                        Connect a trained model backend to enable
+                        student outcome predictions.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="prediction-output"
+                    id="predictionOutput"
+                    hidden
+                >
+
+                    <div class="prediction-main">
+
+                        <span>
+                            PREDICTED OUTCOME
+                        </span>
+
+                        <h3 id="predictedOutcome">
+                            -
+                        </h3>
+
+                    </div>
+
+
+                    <div class="risk-box">
+
+                        <span>Dropout Risk</span>
+
+                        <strong id="riskLevel">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="dropout-probability">
+
+                        <div class="probability-heading">
+                            <span>
+                                Dropout Probability
+                            </span>
+
+                            <strong id="dropoutProbability">
+                                0%
+                            </strong>
+                        </div>
+
+                        <div class="probability-track">
+                            <div
+                                class="probability-fill"
+                                id="probabilityFill"
+                            ></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="class-probabilities">
+
+                        <h4>
+                            Outcome Probabilities
+                        </h4>
+
+                        <div class="probability-row">
+                            <span>Dropout</span>
+                            <strong id="probDropout">-</strong>
+                        </div>
+
+                        <div class="probability-row">
+                            <span>Enrolled</span>
+                            <strong id="probEnrolled">-</strong>
+                        </div>
+
+                        <div class="probability-row">
+                            <span>Graduate</span>
+                            <strong id="probGraduate">-</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="prediction-disclaimer">
+                        This prediction is an academic machine-learning
+                        demonstration and should not be used as the sole
+                        basis for educational decisions.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     06 — PROGRESS
+===================================================== -->
+
+<section class="content-section progress-section" id="progress">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+                <span class="section-kicker">06 / PROJECT PROGRESS</span>
+
+                <h2>
+                    Tracking our
+                    <span>research journey.</span>
+                </h2>
+            </div>
+
+            <p>
+                The project page is updated throughout the semester
+                as new research milestones are completed.
+            </p>
+
+        </div>
+
+
+        <div class="progress-layout">
+
+            <div class="timeline" id="projectTimeline"></div>
+
+
+            <aside class="progress-summary-card">
+
+                <span>PROJECT STATUS</span>
+
+                <h3>Research in Progress</h3>
+
+                <div class="large-progress">
+                    <div class="large-progress-fill"></div>
+                </div>
+
+                <div class="progress-stats">
+
+                    <div>
+                        <strong id="completedMilestones">0</strong>
+                        <span>Completed</span>
+                    </div>
+
+                    <div>
+                        <strong id="activeMilestones">0</strong>
+                        <span>Active</span>
+                    </div>
+
+                    <div>
+                        <strong id="upcomingMilestones">0</strong>
+                        <span>Upcoming</span>
+                    </div>
+
+                </div>
+
+                <p>
+                    Last updated
+                    <strong id="progressLastUpdated">—</strong>
+                </p>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     07 — RESOURCES
+===================================================== -->
+
+<section class="content-section resources-section" id="resources">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div>
+                <span class="section-kicker">07 / FILES & REFERENCES</span>
+
+                <h2>
+                    Project
+                    <span>resources.</span>
+                </h2>
+            </div>
+
+            <p>
+                Research files and supporting materials will be
+                linked here as they become available.
+            </p>
+
+        </div>
+
+
+        <div class="resources-grid">
+
+            <article class="resource-card">
+                <div class="resource-icon">CSV</div>
+                <span>RESEARCH DATA</span>
+                <h3>Dataset</h3>
+                <p>
+                    Dataset and supporting documentation used
+                    for the research.
+                </p>
+                <button disabled>Coming Soon</button>
+            </article>
+
+
+            <article class="resource-card">
+                <div class="resource-icon">&lt;/&gt;</div>
+                <span>SOURCE FILES</span>
+                <h3>Project Code</h3>
+                <p>
+                    Data preparation, modeling and evaluation
+                    source code.
+                </p>
+                <button disabled>Coming Soon</button>
+            </article>
+
+
+            <article class="resource-card">
+                <div class="resource-icon">PDF</div>
+                <span>PUBLICATION</span>
+                <h3>Research Paper</h3>
+                <p>
+                    Final conference-style ICT324 research paper.
+                </p>
+                <button disabled>Coming Soon</button>
+            </article>
+
+
+            <article class="resource-card">
+                <div class="resource-icon">PPT</div>
+                <span>PRESENTATION</span>
+                <h3>Presentation</h3>
+                <p>
+                    Final project presentation and research
+                    findings.
+                </p>
+                <button disabled>Coming Soon</button>
+            </article>
+
+        </div>
+
+
+        <div class="references-box">
+
+            <div>
+                <span>ACADEMIC SOURCES</span>
+                <h3>References</h3>
+            </div>
+
+            <p>
+                The literature review and full academic reference
+                list will be added as the research review progresses.
+            </p>
+
+            <span class="reference-count">
+                TARGET · 10+ RECENT SOURCES
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TEAM
+===================================================== -->
+
+<section class="team-section">
+
+    <div class="container team-wrapper">
+
+        <div>
+
+            <span class="section-kicker">
+                RESEARCH TEAM
+            </span>
+
+            <h2>
+                Team United
+            </h2>
+
+            <p>
+                ICT324 Introduction to Data Warehousing and
+                Data Mining
+            </p>
+
+        </div>
+
+
+        <div class="team-members">
+
+            <div class="member">
+                <span>JW</span>
+                <div>
+                    <strong>Jigme Wangdi</strong>
+                    <small>Team Member</small>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>S</span>
+                <div>
+                    <strong>Sherab</strong>
+                    <small>Team Member</small>
+                </div>
+            </div>
+
+            <div class="member">
+                <span>C</span>
+                <div>
+                    <strong>Chencho</strong>
+                    <small>Team Member</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-main">
+
+        <div>
+
+            <a href="#home" class="logo footer-logo">
+
+                <div class="logo-symbol">
+                    <span>D</span>
+                </div>
+
+                <div class="logo-text">
+                    <strong>DropoutAI</strong>
+                    <small>ICT324 RESEARCH</small>
+                </div>
+
+            </a>
+
+            <p>
+                Student Dropout Prediction using Machine Learning.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+            <strong>Research</strong>
+            <a href="#research">Problem</a>
+            <a href="#data">Dataset</a>
+            <a href="#method">Methodology</a>
+            <a href="#results">Results</a>
+        </div>
+
+
+        <div class="footer-column">
+            <strong>Project</strong>
+            <a href="#progress">Progress</a>
+            <a href="#resources">Files</a>
+            <span>Classification Track</span>
+            <span>ICT324</span>
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            Rangsit University International College
+        </span>
+
+        <span>
+            Last updated · <span id="footerLastUpdated">—</span>
+        </span>
+
+    </div>
+
+</footer>
+    
+
+</main>
+
+
+<script src="update.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
